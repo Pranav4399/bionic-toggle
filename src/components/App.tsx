@@ -1,11 +1,55 @@
 import React, { useState } from 'react'
-import '../assets/App.css'
 
-interface BionicToggleProps {
-  className: string
-}
+function BionicToggle({ className }: { className: string }): JSX.Element {
+  //styles
+  const buttonStyles: any = {
+    button: {
+      border: '0',
+      borderRadius: '50px',
+      cursor: 'pointer',
+      height: '25px',
+      position: 'relative',
+      width: '50px',
+      WebkitAppearance: 'none',
+      MozAppearance: 'none',
+      '&.on': {
+        backgroundColor: '#404043',
+        '.pin': {
+          left: '30px',
+        },
+      },
+      '&.off': {
+        backgroundColor: '#e0e0e0',
+      },
+      '&.hover': {
+        backgroundColor: 'lightgray',
+      },
+      '&.focus': {
+        outline: 'none',
+      },
+      '&.active': {
+        outline: 'none',
+      },
+    },
+  }
 
-function BionicToggle({ className }: BionicToggleProps): JSX.Element {
+  const pinStyles: any = {
+    pin: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontWeight: '600',
+      backgroundColor: 'white',
+      borderRadius: '98px',
+      height: '19px',
+      left: '2px',
+      position: 'absolute',
+      top: '3px',
+      width: '18px',
+      transition: 'left ease 0.5s',
+    },
+  }
+
   const [isToggled, setIsToggled] = useState<boolean>(false)
   const [originalText, setOriginalText] = useState<{ [key: number]: string }>({})
 
@@ -77,8 +121,10 @@ function BionicToggle({ className }: BionicToggleProps): JSX.Element {
 
   return (
     <div className='container'>
-      <button className={isToggled ? 'on' : 'off'} onClick={handleToggle}>
-        <span className='pin'>B</span>
+      <button style={buttonStyles} className={isToggled ? 'on' : 'off'} onClick={handleToggle}>
+        <span style={pinStyles} className='pin'>
+          B
+        </span>
       </button>
     </div>
   )
