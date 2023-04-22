@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../assets/bionicToggle.css'
+import '../assets/App.css'
 
 interface BionicToggleProps {
   className: string
