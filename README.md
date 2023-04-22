@@ -5,13 +5,13 @@ Installation
 
 To install BionicToggle, simply run:
 
-`npm install bionic-toggle`
+`npm install bionictoggle`
 
 ### Usage
 
 To use BionicToggle, you can import the module into your JavaScript file like this:
 
-`import BionicToggle from 'bionic-toggle';`
+`import BionicToggle from 'bionictoggle';`
 
 ### Instructions
 

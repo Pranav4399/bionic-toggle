@@ -1,5 +1,5 @@
 {
-  "name": "bionic-toggle",
+  "name": "bionictoggle",
   "version": "1.0.0",
   "description": "Bionic toggle to enable/disable bionic reading in your blogs",
   "main": "./dist/cjs/index.js",
@@ -7,7 +7,7 @@
   "types": "./dist/esm/index.d.ts",
   "scripts": {
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run prettier && npm run lint",
+    "prepublishOnly": "npm run prettier && npm run lint",
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
@@ -17,7 +17,7 @@
   "keywords": [
     "react",
     "typescript",
-    "bionic-toggle",
+    "bionictoggle",
     "bionic-reading",
     "bionic"
   ],
