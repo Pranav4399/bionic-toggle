@@ -1,6 +1,6 @@
 {
   "name": "bionictoggle",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Bionic toggle to enable/disable bionic reading in your blogs",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
