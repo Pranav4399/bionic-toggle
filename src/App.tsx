@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../assets/app.css'
+import './app.css'
 
 function BionicToggle({ className }: { className: string }): JSX.Element {
   const [isToggled, setIsToggled] = useState<boolean>(false)

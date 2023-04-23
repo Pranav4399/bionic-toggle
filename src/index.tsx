@@ -1,3 +1,3 @@
-import BionicToggle from './components/App'
+import BionicToggle from './App'
 
 export { BionicToggle }
