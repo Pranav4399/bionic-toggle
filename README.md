@@ -15,7 +15,7 @@ To use BionicToggle, you can import the module into your JavaScript file like th
 
 ### Instructions
 
-BionicToggle requires 'className' prop to be passed to it which holds the className of the div inside which the blog text is rendered. As of today, BionicToggle supports rendering of p, span tag. Further additions will be done over the period of time.
+BionicToggle requires 'contentClassName' prop to be passed to it which holds the class name of the div inside which the blog text is rendered. As of today, BionicToggle supports rendering of p, span, h1, h2, h3, h4 tag. Further additions will be done over the period of time.
 
 ### Contributions
 

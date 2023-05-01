@@ -1,18 +1,15 @@
 {
   "name": "bionictoggle",
-  "version": "1.0.13",
+  "version": "0.0.5",
   "description": "Bionic toggle to enable/disable bionic reading in your blogs",
-  "main": "dist/bundle.js",
-  "module": "dist/bundle.js",
-  "types": "dist/esm/index.d.ts",
+  "main": "dist/",
   "scripts": {
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run prettier && npm run lint",
-    "build": "webpack --config webpack.config.js",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
-    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
+    "test": "yarn test",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pranav4399/bionic-toggle.git"
   },
   "keywords": [
     "react",
@@ -21,42 +18,21 @@
     "bionic-reading",
     "bionic"
   ],
-  "author": "Pranav Sriram",
-  "license": "MIT",
+  "author": "Pranav Sriram S",
+  "license": "ISC",
   "devDependencies": {
-    "@types/react": "^18.0.38",
-    "@types/react-dom": "^17.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.59.0",
-    "eslint": "^8.39.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^2.8.7",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^5.0.4",
-    "html-webpack-plugin": "^5.5.0",
-    "postcss-loader": "^6.2.0",
-    "style-loader": "^3.3.1",
-    "ts-loader": "^9.2.6",
-    "webpack": "^5.66.0",
-    "webpack-cli": "^4.10.0",
-    "autoprefixer": "^10.4.2",
-    "css-loader": "^6.5.1"
-  },
-  "dependencies": {
-    "tslib": "^2.5.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Pranav4399/bionic-toggle.git"
+    "tsc-hooks": "^1.1.2",
+    "typescript": "^5.0.4"
   },
   "peerDependencies": {
-    "react": ">=17"
+    "react": "^18.2.0"
   },
   "files": [
-    "dist",
+    "/dist",
     "LICENSE",
     "README.md"
   ]
