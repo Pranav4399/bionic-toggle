@@ -8,7 +8,7 @@ function BionicToggle({ contentClassName }: { contentClassName: string }): JSX.E
   );
 
   // Components to be considered can be added here
-  const componentNames: string[] = ["p", "span", "h1", "h2", "h3", "h4"];
+  const componentNames: string[] = ["p", "span"];
 
   const handleToggle = () => {
     const componentSelectors: string = componentNames

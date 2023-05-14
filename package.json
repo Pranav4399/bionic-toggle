@@ -1,6 +1,6 @@
 {
   "name": "bionictoggle",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Bionic toggle to enable/disable bionic reading in your blogs",
   "main": "dist/",
   "scripts": {
